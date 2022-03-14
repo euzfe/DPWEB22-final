@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Site Yellow Cat</title>
+    <title>Produtos</title>
 
     <link rel="stylesheet" type="text/css" href="./vendor/glider/glider.css">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <!--esse stylesheet é sobre a relação do css com o html (obrigatório)-->
     <script src="https://kit.fontawesome.com/26098af351.js" crossorigin="anonymous"></script>
     <!--linkei o font awesome-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <!--linkando a fonte que vou usar no site todo-->
 </head>
-
 <body>
     <header id="cabecalho">
 
         <nav id="cabecalho-nav" class="wrapper flex">
-            <a href="./index.html">
-                <img id="logo" href="#" src="./img/Logo.svg"
-                    alt="As palavras Yellow e Cat formando o contorno de um gato">
+            <a href="../index.html"> <!-- dois pontinhos serve para linkar coisas que não estão dentro da pasta produtos-->
+                <img id="logo" src="../img/Logo.svg" alt="As palavras Yellow e Cat formando o contorno de um gato">
             </a>
             <div id="links-do-menu">
-                <a class="link" href="./index.html">HOME</a>
+                <a class="link" href="../index.html">HOME</a>
                 <a class="link" href="./produtos/produtos.html">PRINTS</a>
                 <a class="link" href="./produtos/produtos.html">ADESIVOS</a>
                 <a class="link" href="./produtos/produtos.html">CADERNOS</a>
                 <a class="link" href="./produtos/produtos.html">ECOBAGS</a>
-                <a onclick="mostrarSobreNos" class="link" href="#">NÓS</a>
+                <a class="link" href="#">NÓS</a>
                 <a id="user" class="link-icone" href="#"><i class="fa-solid fa-user"></i></a>
                 <a class="link-icone" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
@@ -43,14 +38,6 @@
 
 
     </header>
-    <section id="banner">
-        <div id="nome-site" class="embrulho">
-            <h1 id="yellow-cat-banner">YELLOW CAT</h1>
-            <!-- <img id="imagem-banner" src="./img/imagem quadriculada banner.svg" alt="Imagem quadriculada preta e branca no fundo do banner"> -->
-
-        </div>
-
-    </section>
     <section class="produtos-amados">
         <div class="wrapper">
             <h2 id="titulo-amados" href="#">OS MAIS AMADOS</h2>
@@ -122,88 +109,6 @@
                 </button>
             </div>
         </div>
-        <div class="wrapper etiquetas">
-            <div class="etiqueta">
-                <h3>PARCELE EM ATÉ 4X SEM JUROS</h3>
-            </div>
-            <div class="etiqueta">
-                <h3>FRETE GRÁTIS ACIMA DE R$150</h3>
-            </div>
-        </div>
-    </section>
-    <section class="secao-comentarios">
-        <div class="wrapper">
-            <h2 id="quem-comprou-e-amou" href="#">QUEM COMPROU E AMOU</h2>
-            <p id="primeiro-comentario" class="comentarios">ADOREI A QUALIDADE DOS CADERNOS, PERFEITO!
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-
-            </p>
-            <p id="segundo-comentario" class="comentarios">TODO MUNDO COMENTA SOBRE MEUS PRINTS, MUITO DIFERENTÃO
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
-            <p id="terceiro-comentario" class="comentarios">A ECOBAG CABE DE TUDO, LEVO O MUNDO NA MINHA
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
-            <p id="quarto-comentario" class="comentarios">TÔ VICIADA EM COLAR OS ADESIVOS NO MEU NOTEBOOK
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <div id="container-secao-dados" class="wrapper">
-            <div id="conteudo-secao-dados" class="secao-dados">
-                <h3 id="titulo-dados">PARA RECEBER CUPONS ANTES DE TODO MUNDO</h3>
-                <form class="form-dados">
-                    <input id="input-nome" type="text" placeholder="NOME">
-                    <input id="input-e-mail" type="text" placeholder="E-MAIL">
-                    <div>
-                        <input type="checkbox" id="termos"> 
-                        <label for="termos">ACEITO OS TERMOS E CONDIÇÕES</label>
-                    </div>
-                    
-                    <a id="botao-enviar" href="#">Enviar</a>
-                </form>
-            </div>
-        </div>
-        
-    </section>
-
-    <footer id="footer" >
-        <div id="formas-pagamento">
-            <h2>FORMAS DE PAGAMENTO</h2>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-        </div>
-
-        <div id="redes-sociais">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-
-    </footer>
-
-    <script src="./vendor/glider/glider.js"></script>
-    <script src="./script.js"></script>
+    
 </body>
-
 </html>

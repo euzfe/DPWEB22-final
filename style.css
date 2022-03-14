@@ -1,10 +1,22 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: 0;
 }
 
-a{
+a, h1, h2, h3, input, label {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; /*uppercase faz com que mesmo que eu digite em minúsculo, o texto fique maiúsculo, que é o tipo de texto que quero para o meu site*/
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+
+a {
     text-decoration: none;
     color: #000000;
 }
@@ -12,37 +24,296 @@ a{
 .wrapper {
     width: 90%;
     max-width: 1440px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #logo {
     margin: 20px;
+
 }
 
-#links-do-menu{
+#links-do-menu {
     font-size: 20px;
 }
 
-.link{
+.link {
     padding: 20px;
 }
 
-.link:hover{
+.link:hover {
     /* text-decoration: underline; */
     border-bottom: 2px solid #000000;
 }
 
-.link-icone{
-    padding: 20px;
+.link-icone {
+    padding: 30px;
 
 }
 
-#links-do-menu{
-    display: inline-block
+#cabecalho-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user {
+    margin-left: 190px;
+
+}
+
+#yellow-cat-banner {
+    font-size: 75px;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    width: 328.76px;
+    height: 209px;
+    font-weight: 700;
+    text-align: center;
+    /*p/alinhar texto, colocamos text-align*/
+    box-shadow: -15px -15px #f5d000;
+    outline: 4px solid white;
+}
+
+
+#quadrado-amarelo-meio {
+    width: 328.76px;
+    height: 209px;
+    background-color: #f5d000;
+    border: 4px solid #000000;
+}
+
+#quadrado-amarelo-fundo {
+    width: 328.76px;
+    height: 209px;
+    background-color: #f5d000;
+    border: 4px solid #000000;
+}
+
+#nome-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+#titulo-favoritos {
+    background-color: #f5d000;
+    border: 2px solid #000000;
+
+}
+
+#banner {
+    height: calc(100vh - 148px);
+    background-image: url("./img/imagem quadriculada banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#titulo-amados {
+    font-size: 29px;
+    background-color: #f5d000;
+    border-radius: 50px;
+    border: 4px solid #000000;
+    padding: 2px 93px;
+    box-shadow: -10px 10px #000000;
+    width: fit-content;
+    margin: auto;
+}
+
+.botao-comprar {
+    color: #f5d000;
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    border: 4px solid #ffffff;
+    padding: 5px 25px;
+    width: fit-content;
+    box-shadow: -10px 10px #000000;
+}
+
+.etiqueta {
+    font-size: 33px;
+    padding: 10px 61px  ;
+    background-color: #f5d000;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+}
+.etiquetas{
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 0;
+}
+
+
+.produtos-amados {
+    padding: 128px 0;
+}
+
+.produto {
+    margin: 28.79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.glider{
+    color: #000000;
+}
+
+#quem-comprou-e-amou{
+    color: #000000;
+    font-size: 29px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 4px solid #000000;
+    padding: 2px 93px;
+    box-shadow: -10px 10px #000000;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.secao-comentarios{
+    background-color: #f5d000;
+    padding: 32px 0;
+    border:4px solid #000000;
+
     
 }
 
+.comentarios{
+    font-size: 32px;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #000000;
+    box-shadow: -10px 10px  #ffffff;
+
+    padding: 5px 25px;
+    width: 613px;
+    height: 166px;
+    margin: 25px 107px;
+}
+
+
+#primeiro-comentario{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#segundo-comentario{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#terceiro-comentario{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#quarto-comentario{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
 
 
 
+
+
+
+#input-nome{
+   
+    border-radius: 50px;
+    padding: 9px 25px;
+    margin: 10px;
+    text-rendering: auto;
+}
+
+#input-e-mail{
+  
+    border-radius: 50px;
+    padding: 9px 25px;
+    margin: 10px;
+    text-rendering: auto;
+    
+}
+
+.secao-dados{
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    margin: 15px;
+    padding:15px ;
+    width: 491px;
+    height: 491px;
+    box-shadow: -10px 10px  #f5d000;
+   
+
+}
+#conteudo-secao-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-secao-dados{
+    display: flex;
+    justify-content: center;
+    padding: 190px 0;
+}
+
+.form-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo-dados{
+    width: 357px
+}
+#botao-enviar{
+    display: flex;
+    align-items: center;
+    color: #f5d000;
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    border: 4px solid #ffffff;
+    padding:5px 25px;
+    width: fit-content;
+    
+    box-shadow: -10px 10px #000000;
+}
+
+#footer{
+    background-color: #000000;
+    
+}
+
+#formas-pagamento{
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+#redes-sociais{
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#footer{
+    
+}
 
