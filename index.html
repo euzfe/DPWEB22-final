@@ -34,7 +34,7 @@
                 <a class="link" href="./produtos/produtos.html">ADESIVOS</a>
                 <a class="link" href="./produtos/produtos.html">CADERNOS</a>
                 <a class="link" href="./produtos/produtos.html">ECOBAGS</a>
-                <a onclick="mostrarSobreNos" class="link" href="#">NÓS</a>
+                <a id="Nos" onclick="mostrarSobreNos()" class="link" href="#">NÓS</a>
                 <a id="user" class="link-icone" href="#"><i class="fa-solid fa-user"></i></a>
                 <a class="link-icone" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
@@ -67,49 +67,46 @@
                         <img src="./img/adesivo pintinho com faca.png"
                             alt="Pintinho amarelo fofo, com bico e pés laranja segurando uma faquinha">
                         <h3 id="nome-adesivo-pintinho" href="#">ADESIVO PINTINHO</h3>
-                        <p id="valor-adesivo-pintinho" href="#">R$55</p>
+                        <p id="valor-adesivo-pintinho" href="#">R$5</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
                         <img src="./img/ecobag coração.png"
                             alt="Ecobag com ilustração de coração vermelho com rosto e mostrando a língua">
                         <h3 id="nome-ecobag-coracao" href="#">ECOBAG CORAÇÃO</h3>
-                        <p id="valor-ecobag-coracao" href="#">R$55</p>
+                        <p id="valor-ecobag-coracao" href="#">R$25</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
                         <img src="./img/ecobag letras.png"
                             alt="Ecobag com várias frases de Are you bored yet? com tipografia retorcida no centro">
                         <h3 id="nome-ecobag-bored" href="#">ECOBAG BORED</h3>
-                        <p id="valor-ecobag-bored" href="#">R$55</p>
+                        <p id="valor-ecobag-bored" href="#">R$25</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
-                        <img src="./img/caderno margaridas.png"
-                            alt="Caderno azul de espiral preta, com elástico amarelo e margaridas sorrindo">
-                        <h3 id="nome-caderno-margaridas" href="#">CADERNO MARGARIDAS</h3>
-                        <p id="valor-caderno-margaridas" href="#">R$55</p>
+                        <img src="./img/adesivo balão.jpg" alt="Adesivo de cachorro feito com balões amarelo">
+                        <h3 id="nome-adesivo-cachorro" href="#">ADESIVO CACHORRO BALÃO</h3>
+                        <p id="valor-adesivo-cachorro" href="#">R$5</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
-                        <img src="./img/adesivo pintinho com faca.png"
-                            alt="Pintinho amarelo fofo, com bico e pés laranja segurando uma faquinha">
-                        <h3 id="nome-adesivo-pintinho" href="#">ADESIVO PINTINHO</h3>
-                        <p id="valor-adesivo-pintinho" href="#">R$55</p>
+                        <img src="./img/caderneta sorrisos.webp" alt="caderno preto com sorrisos de carinhas amarelas">
+                        <h3 id="nome-caderno-smiles" href="#">CADERNO SMILESSS</h3>
+                        <p id="valor-caderno-smiles" href="#">R$55</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
-                        <img src="./img/ecobag coração.png"
-                            alt="Ecobag com ilustração de coração vermelho com rosto e mostrando a língua">
-                        <h3 id="nome-ecobag-coracao" href="#">ECOBAG CORAÇÃO</h3>
-                        <p id="valor-ecobag-coracao" href="#">R$55</p>
+                        <img src="./img/print pombo.jpg"
+                            alt="Personagem morte com corações nos olhos, mostrando que está apaixonada">
+                        <h3 id="nome-print-morte" href="#">PRINT MORTE APAIXONADA</h3>
+                        <p id="valor-print-morte" href="#">R$25</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                     <div class="produto">
-                        <img src="./img/ecobag letras.png"
-                            alt="Ecobag com várias frases de Are you bored yet? com tipografia retorcida no centro">
-                        <h3 id="nome-ecobag-bored" href="#">ECOBAG BORED</h3>
-                        <p id="valor-ecobag-bored" href="#">R$55</p>
+                        <img src="./img/print heart.jpg" alt="print beep beep bitch">
+                        <h3 id="nome-print-beep" href="#">PRINT BEEP BEEP BITCH</h3>
+                        <p id="valor-print-beep" href="#">R$25</p>
                         <a class="botao-comprar" href="#">COMPRAR</a>
                     </div>
                 </div>
@@ -134,35 +131,52 @@
     <section class="secao-comentarios">
         <div class="wrapper">
             <h2 id="quem-comprou-e-amou" href="#">QUEM COMPROU E AMOU</h2>
-            <p id="primeiro-comentario" class="comentarios">ADOREI A QUALIDADE DOS CADERNOS, PERFEITO!
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            <div id="todos-comentarios">
+                <div class="comentarios">
+                    <p> ADOREI A QUALIDADE DOS CADERNOS, PERFEITO! </p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="comentarios comentario-dir">
+                    <p> TODO MUNDO COMENTA SOBRE MEUS PRINTS, MUITO DIFERENTÃO </p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="comentarios">
+                    <p> A ECOBAG CABE DE TUDO, LEVO O MUNDO NA MINHA </p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        
+                    </div>
+                </div>
+                <div class="comentarios comentario-dir">
+                    <p> TÔ VICIADA EM COLAR OS ADESIVOS NO MEU NOTEBOOK </p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+          
 
-            </p>
-            <p id="segundo-comentario" class="comentarios">TODO MUNDO COMENTA SOBRE MEUS PRINTS, MUITO DIFERENTÃO
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
-            <p id="terceiro-comentario" class="comentarios">A ECOBAG CABE DE TUDO, LEVO O MUNDO NA MINHA
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
-            <p id="quarto-comentario" class="comentarios">TÔ VICIADA EM COLAR OS ADESIVOS NO MEU NOTEBOOK
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </p>
+           
+           
         </div>
     </section>
 
@@ -174,30 +188,34 @@
                     <input id="input-nome" type="text" placeholder="NOME">
                     <input id="input-e-mail" type="text" placeholder="E-MAIL">
                     <div>
-                        <input type="checkbox" id="termos"> 
+                        <input type="checkbox" id="termos">
                         <label for="termos">ACEITO OS TERMOS E CONDIÇÕES</label>
                     </div>
-                    
+
                     <a id="botao-enviar" href="#">Enviar</a>
                 </form>
             </div>
         </div>
-        
+
     </section>
 
-    <footer id="footer" >
+    <footer>
         <div id="formas-pagamento">
             <h2>FORMAS DE PAGAMENTO</h2>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
+            <div id="icones-pagamento">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+
+            </div>
         </div>
 
+       
         <div id="redes-sociais">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-pinterest-square"></i>
             <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter-square"></i>
         </div>
 
     </footer>
